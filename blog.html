@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog — Ritik Dubey</title>
+<meta name="description" content="Writings by Ritik Dubey on physics, research life, and things he's been reading.">
+<meta name="theme-color" content="#12173A">
+<meta property="og:title" content="Blog — Ritik Dubey">
+<meta property="og:description" content="Writings on physics, research life, and things I've been reading.">
+<meta property="og:type" content="website">
+
+<!-- <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="page--no-hero">
+
+<a href="#blog" class="visually-hidden">Skip to content</a>
+
+<nav class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Ritik Dubey</a>
+
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="research.html" class="nav__link">Research</a>
+      <a href="projects.html" class="nav__link">Projects</a>
+      <a href="publications.html" class="nav__link">Publications</a>
+      <a href="blog.html" class="nav__link">Blog</a>
+    </div>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+  <button class="mobile-drawer__close" id="drawerClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="mobile-drawer__links">
+    <a href="index.html" class="mobile-drawer__link">Home</a>
+    <a href="about.html" class="mobile-drawer__link">About</a>
+    <a href="research.html" class="mobile-drawer__link">Research</a>
+    <a href="projects.html" class="mobile-drawer__link">Projects</a>
+    <a href="publications.html" class="mobile-drawer__link">Publications</a>
+    <a href="blog.html" class="mobile-drawer__link">Blog</a>
+  </nav>
+  <div class="mobile-drawer__footer">
+    <a href="mailto:rd22ms208@iiserkol.ac.in" class="social-icon" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/ritik-dubey-9b148a251" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-3.5c0-1.4 1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v3.5"/></svg>
+    </a>
+    <a href="https://github.com/ritikphy" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+    </a>
+  </div>
+</aside>
+
+<main>
+
+  <!-- ============================================================
+       BLOG
+       Same pattern as Publications: empty state now, with a
+       ready-to-use card template commented out below.
+  ============================================================ -->
+  <section class="section" id="blog">
+    <div class="container">
+      <p class="eyebrow reveal">Blog</p>
+      <h2 class="section-heading reveal">Writings </h2>
+      <p class="section-intro reveal">Occasional posts on physics, research life, and things I've been reading.</p>
+
+      <div class="reveal">
+        <div class="empty-state">
+          <div class="empty-state__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h4"/></svg>
+          </div>
+          <p class="empty-state__title">First post is on its way</p>
+          <p class="empty-state__text">This is where short write-ups will appear. Check back soon.</p>
+        </div>
+
+        <!--
+        BLOG CARD TEMPLATE — uncomment and duplicate per post, and
+        remove the .empty-state div above. Wrap cards in
+        <div class="blog__grid"> ... </div>
+
+        <article class="blog-card">
+          <div class="blog-card__media">
+            <img src="assets/images/projects/your-post-image.jpg" alt="">
+          </div>
+          <p class="blog-card__date">Month 20XX</p>
+          <h3 class="blog-card__title">Post Title Goes Here</h3>
+          <p class="blog-card__excerpt">One or two sentences previewing what the post is about.</p>
+        </article>
+        -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <!-- EDIT ME: name in the copyright line -->
+    <p>&copy; <span id="footerYear"></span> Ritik Dubey. All rights reserved.</p>
+
+    <!-- EDIT ME: contact links - this is the site's only contact point now
+         (there's no separate Contact page). Keep in sync with the mobile
+         drawer footer above, near the top of this file. -->
+    <div class="footer__socials">
+      <a href="mailto:rd22ms208@iiserkol.ac.in" class="social-icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/ritik-dubey-9b148a251" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-3.5c0-1.4 1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v3.5"/></svg>
+      </a>
+      <a href="https://github.com/ritikphy" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=your-id" class="social-icon" aria-label="Google Scholar" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4L3 9l9 5 9-5-9-5z"/><path d="M6.5 11.5V17c0 1.5 2.5 3 5.5 3s5.5-1.5 5.5-3v-5.5"/></svg>
+      </a>
+      <a href="https://orcid.org/your-id" class="social-icon" aria-label="ORCID" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.5"/><circle cx="9.2" cy="8.6" r="0.9" fill="currentColor" stroke="none"/><path d="M9.2 11v6.2M13 11v3.6c0 1.5 1.1 2.6 2.6 2.6s2.6-1.1 2.6-2.6-1.1-2.6-2.6-2.6H13"/></svg>
+      </a>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

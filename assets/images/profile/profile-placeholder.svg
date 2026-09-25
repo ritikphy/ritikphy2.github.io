@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="ph-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1EFE9"/>
+      <stop offset="100%" stop-color="#E4E1D8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#ph-bg)"/>
+  <rect x="24" y="24" width="752" height="952" fill="none" stroke="#B8925A" stroke-width="2" stroke-dasharray="10 8" opacity="0.55"/>
+
+  <!-- simple orbital / atom mark -->
+  <g transform="translate(400,430)" stroke="#B8925A" fill="none" stroke-width="2.5" opacity="0.75">
+    <ellipse rx="150" ry="58"/>
+    <ellipse rx="150" ry="58" transform="rotate(60)"/>
+    <ellipse rx="150" ry="58" transform="rotate(120)"/>
+    <circle r="10" fill="#B8925A" stroke="none"/>
+  </g>
+
+  <text x="400" y="640" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="20"
+        letter-spacing="2" fill="#5B5E70">YOUR PHOTO GOES HERE</text>
+  <text x="400" y="672" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14"
+        letter-spacing="1" fill="#8b8e9c">assets/images/profile/profile.jpg</text>
+</svg>

@@ -1,0 +1,81 @@
+/* ============================================================
+   DESIGN TOKENS
+   ------------------------------------------------------------
+   Every colour, font and spacing value the site uses lives here.
+   Change a value in this file and it updates everywhere on the
+   site. This is the file you will touch most often.
+============================================================ */
+
+:root {
+
+  /* ---- COLOUR: deep space navy + brass accent ------------- */
+  --color-ink:        #12173A;   /* deepest navy - hero/footer background */
+  --color-ink-2:      #1E2A5E;   /* lighter navy - gradients, hover states */
+  --color-paper:      #FAF9F6;   /* warm off-white - main page background */
+  --color-paper-dim:  #F1EFE9;   /* slightly deeper paper - alt section bg */
+  --color-text:       #201F2B;   /* near-black body text */
+  --color-text-soft:  #5B5E70;   /* secondary / muted text */
+  --color-line:       #E4E1D8;   /* hairline borders & dividers */
+  --color-accent:     #B8925A;   /* brass/gold accent - links, highlights */
+  --color-accent-dim: #D8C6A3;   /* pale brass - subtle backgrounds */
+  --color-white:      #FFFFFF;
+
+  /* semantic aliases so component CSS reads clearly */
+  --bg-page:          var(--color-paper);
+  --bg-section-alt:   var(--color-paper-dim);
+  --bg-dark:          var(--color-ink);
+  --text-primary:     var(--color-text);
+  --text-secondary:   var(--color-text-soft);
+  --text-on-dark:     #EDEBFB;
+  --text-on-dark-soft: #AEB2D6;
+  --border-color:     var(--color-line);
+  --accent:           var(--color-accent);
+
+  /* ---- TYPOGRAPHY ------------------------------------------ */
+  --font-display: 'Fraunces', 'Georgia', serif;      /* headings, quotes  */
+  --font-body:    'Inter', -apple-system, sans-serif; /* paragraphs, UI    */
+  --font-mono:    'IBM Plex Mono', 'Courier New', monospace; /* labels, dates */
+
+ --fs-hero-quote: clamp(1.25rem, 2.3vw, 1.95rem);
+  --fs-h1:          clamp(2.2rem, 5vw, 3.6rem);
+  --fs-h2:          clamp(1.7rem, 3.4vw, 2.4rem);
+  --fs-h3:          clamp(1.2rem, 2vw, 1.5rem);
+  --fs-body:        1.0625rem;
+  --fs-small:       0.875rem;
+  --fs-label:       0.78rem;
+
+  --lh-tight:  1.2;
+  --lh-normal: 1.6;
+  --lh-loose:  1.85;
+
+  /* ---- SPACING (8px rhythm) --------------------------------- */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4.5rem;
+  --space-7: 7rem;
+
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+  --content-max: 1180px;
+  --content-narrow: 780px;
+
+  /* ---- MOTION ------------------------------------------------ */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast:    0.22s;
+  --dur-med:     0.45s;
+  --dur-slow:    0.9s;
+
+  /* ---- EFFECTS ------------------------------------------------ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-soft: 0 10px 30px -12px rgba(18, 23, 58, 0.18);
+  --shadow-card: 0 2px 14px rgba(18, 23, 58, 0.07);
+  --shadow-nav:  0 4px 20px rgba(18, 23, 58, 0.08);
+
+  /* fixed nav height - used by JS scroll offset + CSS scroll-padding */
+  --nav-height: 76px;
+  --nav-height-mobile: 64px;
+}

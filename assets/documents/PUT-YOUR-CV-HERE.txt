@@ -1,0 +1,7 @@
+Add your CV to this folder as:  CV.pdf
+
+The "Download CV" button in the Intro section already links to:
+  assets/documents/CV.pdf
+
+Once you add the file with that exact name, the button will work.
+You can delete this text file at that point.

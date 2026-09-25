@@ -1,0 +1,90 @@
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ------------------------------------------------------------
+   Two breakpoints:
+     900px  - tablet: nav becomes the hamburger + side drawer,
+              two-column sections stack to one column
+     560px  - phone: tighter spacing, smaller type
+============================================================ */
+
+/* ---------------- TABLET: <= 900px ---------------- */
+@media (max-width: 900px) {
+
+  .nav__links { display: none; }      /* desktop links hidden      */
+  .nav__toggle { display: block; }    /* hamburger shown instead   */
+
+  .intro__grid,
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro__photo-wrap {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+  .intro__photo-wrap::before { display: none; }
+
+  .intro__text,
+  .intro__eyebrow,
+  .intro__name,
+  .intro__role {
+    text-align: center;
+  }
+  .intro__text p { margin-inline: auto; }
+  .intro__links { justify-content: center; }
+
+  .timeline { margin-top: var(--space-2); }
+
+  .pub-item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .pub-item__link { width: fit-content; }
+}
+
+
+/* ---------------- PHONE: <= 560px ---------------- */
+@media (max-width: 560px) {
+
+  :root {
+    --section-padding-y: 3.5rem;
+  }
+
+  .hero__content { padding-bottom: 3rem; }
+  .hero__scroll-cue { display: none; } /* not enough vertical room to spare */
+
+  .research__grid,
+  .projects__grid,
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__socials { justify-content: center; flex-wrap: wrap; }
+
+  .mobile-drawer { width: 82vw; }
+  .mobile-drawer__link { font-size: 1.35rem; }
+
+   .hero__fade { height: 30px; }
+}
+
+
+/* ---------------- Fine pointer only ----------------
+   Hover-scale micro-interactions are for mouse users; touch
+   devices get :active feedback instead so nothing feels stuck
+   "zoomed in" after a tap.
+------------------------------------------------------- */
+@media (hover: none) {
+  .nav__link:hover,
+  .research-card:hover,
+  .project-card:hover,
+  .filter-btn:hover,
+  .social-icon:hover,
+  .btn:hover {
+    transform: none;
+  }
+}
